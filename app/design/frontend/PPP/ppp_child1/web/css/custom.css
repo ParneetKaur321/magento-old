@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(0, 251, 255);
+}
+.category.container{
+    display: flex;
+    justify-content: space-around;
+}
+.category-block h2{
+    font-size: 19px;
+    font-weight: 700;
+    color: red;
+}

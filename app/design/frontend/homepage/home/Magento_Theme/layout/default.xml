@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+    
+        <referenceBlock name="footer_links">
+            <referenceBlock name="catalog-search-advanced-link" remove="true"/>
+            <referenceBlock name="privacy-policy-link" remove="true"/>
+            <referenceBlock name="search-term-popular-link" remove="true"/>
+            <referenceBlock name="sales-guest-form-link" remove="true"/>
+            <referenceBlock name="contact-us-link" remove="true"/>
+            <referenceBlock name="form.subscribe" remove="true" />
+            <referenceBlock name="currency" remove="true" />
+            <referenceBlock name="store.settings.currency" remove="true" />
+            <referenceBlock name="authorization-link-login" remove="true" />
+            <referenceBlock name="register-link" remove="true" /> 
+            <referenceBlock name="catalog.compare.sidebar" remove="true"/> 
+            <referenceBlock name="wishlist_sidebar" remove="true" />
+        
+            <referenceContainer name="footer">
+                <referenceBlock name="footer_links" remove="true" />
+                <block class="Magento\Framework\View\Element\Template" name="footer.navigation.menu" before="-" template="Magento_Theme::footer_menu.phtml"/>
+            </referenceContainer>
+        
+            <referenceBlock name="header.panel">
+                <block class="Magento\Framework\View\Element\Template" name="heade-top-bar" before="-" template="Magento_Theme::top_bar.phtml"/>
+            </referenceBlock>
+    
+        </referenceBlock>
+    </body>
+</page>
+
