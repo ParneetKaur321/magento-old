@@ -1,0 +1,21 @@
+<?php
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$categoryFactory = $objectManager->create('Magento\Catalog\Model\ResourceModel\Category\CollectionFactory');
+$storeManager = $objectManager->create('\Magento\Store\Model\StoreManagerInterface');
+$categories = $categoryFactory->create()->addAttributeToSelect('*')->setStore($storeManager->getStore());
+?>
+
+<div class="category-container">
+<?php
+foreach ($categories as $cat) {
+    ?>
+
+<div class="category-block">
+    <img src="<?=$storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_WEB).$cat->getImageUrl() ?>" alt="<?=$cat->getName() ?>"/>
+    <h2><?=$cat->getName() ?></h2>
+    <p><?=$cat->getDescription() ?></p>
+</div>
+<?php 
+}
+?>
+</div>

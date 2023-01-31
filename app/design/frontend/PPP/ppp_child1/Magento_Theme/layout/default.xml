@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+   <body>
+       <referenceBlock name="currency" remove="true" />
+       <referenceBlock name="store.settings.currency" remove="true" />
+       
+       <referenceBlock name="header.panel">
+            <block class="Magento\Framework\View\Element\Template" name="heade-top-bar" before="-" template="Magento_Theme::top_bar.phtml"/>
+       </referenceBlock>
+
+       <referenceBlock name="footer_links">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="2custom-link">
+                <arguments>
+                <argument name="label" xsi:type="string">New Footer Link</argument>
+                <argument name="path" xsi:type="string">Thisisurl</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+   
+   </body>
+</page>
