@@ -1,6 +1,0 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1675140348;s:6:"expire";i:1675143948;s:4:"tags";s:98:"f37_BLOCK_HTML,f37_CAT_C,f37_CAT_C_11,f37_CAT_C_14,f37_CAT_C_15,f37_CAT_C_16,f37_CAT_C_19,f37_MAGE";}
-
-<nav class="navigation" data-action="navigation">
-    <ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
-        <li  class="level0 nav-1 category-item first level-top"><a href="http://127.0.0.1/magento/index.php/shop.html"  class="level-top" ><span>Shop</span></a></li><li  class="level0 nav-2 category-item level-top"><a href="http://127.0.0.1/magento/index.php/new-arrivals.html"  class="level-top" ><span>New Arrivals</span></a></li><li  class="level0 nav-3 category-item level-top"><a href="http://127.0.0.1/magento/index.php/best-sellers.html"  class="level-top" ><span>Best Sellers</span></a></li><li  class="level0 nav-4 category-item level-top"><a href="http://127.0.0.1/magento/index.php/pages.html"  class="level-top" ><span>Pages</span></a></li><li  class="level0 nav-5 category-item last level-top"><a href="http://127.0.0.1/magento/index.php/login.html"  class="level-top" ><span>Login</span></a></li>            </ul>
-</nav>
